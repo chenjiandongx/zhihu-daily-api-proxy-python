@@ -1,3 +1,6 @@
+# !/usr/bin/env python
+# coding=utf-8
+
 import requests
 from fake_useragent import UserAgent
 from flask import Flask
@@ -5,7 +8,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)   # 处理跨域问题
 
 
 UA = UserAgent()
