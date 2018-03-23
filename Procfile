@@ -1,0 +1,1 @@
+web: gunicorn manager:app  --workers=2
