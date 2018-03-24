@@ -2,7 +2,7 @@
 
 部署网站：[https://zhihu-daily-api-proxy-python.herokuapp.com](https://zhihu-daily-api-proxy-python.herokuapp.com)
 
-NodeJS 版本：[https://zhihu-daily-api-proxy-nodej.herokuapp.com](https://zhihu-daily-api-proxy-nodejs.herokuapp.com)
+NodeJS 版本：[https://github.com/chenjiandongx/zhihu-daily-api-proxy-nodejs](https://github.com/chenjiandongx/zhihu-daily-api-proxy-nodejs)
 
 > 最近在学习 Vue.js，照着示例实现了一个知乎日报 Web 版，但是想要部署在网上的话有个问题，就是 API 跨域访问，直接使用 Ajax 获取知乎日报的 API 会报错，常用的方法就是使用代理，本版本是用 Flask 实现的。并部署在了 Heroku。
 
