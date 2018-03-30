@@ -24,6 +24,7 @@ IMG_HERDER = {
     'Access-Control-Allow-Origin': '*'
 }
 
+ERROR_MSG = "{code: 10086}"
 API = "http://news-at.zhihu.com/api/4"
 s = requests.session()
 
@@ -34,7 +35,7 @@ def daily_news_date(date):
     try:
         content = s.get(_url, headers=API_HEADER).content
     except:
-        return "404"
+        return ERROR_MSG
     return content
 
 
@@ -44,7 +45,7 @@ def daily_news_id(id):
     try:
         content = s.get(_url, headers=API_HEADER).content
     except:
-        return "404"
+        return ERROR_MSG
     return content
 
 
@@ -54,7 +55,7 @@ def daily_all_themes():
     try:
         content = s.get(_url, headers=API_HEADER).content
     except:
-        return "404"
+        return ERROR_MSG
     return content
 
 
@@ -64,7 +65,7 @@ def daily_theme_id(id):
     try:
         content = s.get(_url, headers=API_HEADER).content
     except:
-        return "404"
+        return ERROR_MSG
     return content
 
 
@@ -73,7 +74,7 @@ def daily_images(url):
     try:
         content = s.get(url, headers=IMG_HERDER).content
     except:
-        return "404"
+        return ERROR_MSG
     return content
 
 
